@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.873c6f63.js",
-    "static/js/787.9cf7e5f9.chunk.js": "/static/js/787.9cf7e5f9.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.873c6f63.js.map": "/static/js/main.873c6f63.js.map",
-    "787.9cf7e5f9.chunk.js.map": "/static/js/787.9cf7e5f9.chunk.js.map"
+    "main.css": "/chicazzovoto/static/css/main.073c9b0a.css",
+    "main.js": "/chicazzovoto/static/js/main.1965632c.js",
+    "static/js/787.9cf7e5f9.chunk.js": "/chicazzovoto/static/js/787.9cf7e5f9.chunk.js",
+    "static/media/logo.svg": "/chicazzovoto/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/chicazzovoto/index.html",
+    "main.073c9b0a.css.map": "/chicazzovoto/static/css/main.073c9b0a.css.map",
+    "main.1965632c.js.map": "/chicazzovoto/static/js/main.1965632c.js.map",
+    "787.9cf7e5f9.chunk.js.map": "/chicazzovoto/static/js/787.9cf7e5f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.873c6f63.js"
+    "static/js/main.1965632c.js"
   ]
 }
