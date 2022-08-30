@@ -1,6 +1,6 @@
 {
   "name": "chicazzovoto",
-  "homepage": "https://chicazzovoto.it",
+  "homepage": "https://chicazzovoto.it/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && echo 'chicazzovoto.it' > ./build/CNAME && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
