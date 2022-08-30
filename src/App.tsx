@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import jsonData from "./politiche_2022.json";
+
+const params: any = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop as string),
+});
 
 function App() {
+  let item = null;
+  if(params.id_dep) {
+    item = jsonData.find((el) => el.id_dep == params.id_dep);
+  } else {
+    item = jsonData[Math.floor(Math.random()*jsonData.length)];
+  }
+
+  if(!item) {
+    return <p>ooopps....</p>
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <img src={`./logos/${item.f_contr}`} alt=""/>
+
+      <p>{item.partito}</p>
+      {item.nome_c && (
+          <p><span>con a capo:</span>&nbsp;{item.nome_c} {item.cogn_c}</p>
+      )}
+      <p className="permalink">
+        <a href={`?id_dep=${item.id_dep}`}>permalink</a>
+      </p>
+    </>
   );
 }
 
