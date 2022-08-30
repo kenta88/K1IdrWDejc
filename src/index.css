@@ -4,7 +4,8 @@ body {
   line-height: 1.2em;
 }
 #root {
-  width: 760px;
+  width:100%;
+  max-width: 760px;
   text-align: left;
   margin: 1em auto;
 }
