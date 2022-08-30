@@ -22,6 +22,28 @@ body {
   text-decoration: underline;
 }
 
+.link {
+  font-size: 0.8em;
+  color: #656565;
+  line-height: 1em;
+}
+.link button {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+.link button:hover {
+  text-decoration: underline;
+}
+
 .logo-cont {
   text-align: center;
+}
+
+h4 {
+  margin-bottom:0
+}
+
+ul li {
+  margin-bottom:1em;
 }
